@@ -1,0 +1,33 @@
+{
+  "scopeName": "source.ncrds",
+  "patterns": [
+    {
+      "name": "keyword.control.sql",
+      "match": "\\b(SELECT|FROM|WHERE|INSERT|INTO|VALUES|UPDATE|DELETE|JOIN|ALTER|TABLE|ADD|COLUMN|CREATE|TRIGGER|BEFORE|AFTER|BEGIN|END|SET|ON|AS|NULL|NOT|DEFAULT|PRIMARY|KEY|FOREIGN|CONSTRAINT|REFERENCES|AND|OR|IN|IS|LIKE|EXISTS|BETWEEN|DISTINCT|GROUP BY|ORDER BY|HAVING|LIMIT|OFFSET|UNION|ALL|ANY|SOME|LEFT|RIGHT|INNER|OUTER|CROSS|NATURAL|CASE|WHEN|THEN|ELSE|END|CAST|CONVERT|DEFINER|CURRENT_USER)\\b"
+    },
+    {
+      "name": "entity.name.table.sql",
+      "match": "`[a-zA-Z_][a-zA-Z0-9_]*`"
+    },
+    {
+      "name": "entity.name.schema.sql",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\.[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "entity.name.trigger.sql",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "string.quoted.single.sql",
+      "begin": "'",
+      "end": "'"
+    },
+    {
+      "name": "constant.numeric.sql",
+      "match": "\\b\\d+\\b"
+    }
+  ],
+  "repository": {},
+  "fileTypes": ["ncrds"],
+  "name": "NCRDS"
+}
